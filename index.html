@@ -103,6 +103,23 @@
   @media (max-width: 700px) {
     h1.title { white-space: normal; font-size: clamp(1.3rem, 5.5vw, 1.8rem); }
   }
+  .masthead-desc {
+    margin-top: 0.9rem;
+    max-width: 74ch;
+  }
+  .masthead-desc p {
+    margin: 0.3rem 0;
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  .masthead-desc a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  .masthead-desc a:hover { border-bottom-color: var(--accent); }
   .dek {
     margin-top: 0.9rem;
     max-width: 62ch;
@@ -371,7 +388,11 @@
 
 <header class="masthead">
   <div class="masthead-inner">
-    <h1 class="title">Canada critical minerals processing landscape database</h1>
+    <h1 class="title">Canada critical minerals processing landscape</h1>
+    <div class="masthead-desc">
+      <p>Excel file available at: <a href="https://github.com/brianwu5/Canada-Critical-Minerals-Processing-Landscape/blob/main/Canada%20Critical%20Minerals%20Processing%20Facilities.xlsx" target="_blank" rel="noopener">github.com/brianwu5/Canada-Critical-Minerals-Processing-Landscape</a></p>
+      <p>Research for this dataset <a href="https://www.canada.ca/en/department-national-defence/programs/minds/funding-results.html" target="_blank" rel="noopener">was funded</a> by the Department of National Defence's Mobilizing Insights in Defence and Security (MINDS) program.</p>
+    </div>
   </div>
 </header>
 
